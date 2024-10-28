@@ -1,0 +1,75 @@
+body {
+    background-color: #1e1e2e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #5865f2;
+    background-color: #2f3136;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #7289da;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #40444b;
+    color: white;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5865f2;
+    color: white;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4752c4;
+}
+
+#availabilityList {
+    margin-top: 20px;
+    color: #b9bbbe;
+}
+
+@media (max-width: 600px) {
+    .checkbox-group label {
+        width: 100%;
+    }
+}

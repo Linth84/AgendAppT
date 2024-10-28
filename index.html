@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendAppT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="appTitle">AgendAppT</h1>
+        
+        <div class="user-input">
+            <label for="nameInput">Nombre:</label>
+            <input type="text" id="nameInput" placeholder="Tu nombre">
+        </div>
+
+        <div>
+            <label>Días:</label>
+            <div class="checkbox-group days-group">
+                <label><input type="checkbox" class="dayCheckbox" value="Domingo"> Domingo</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Lunes"> Lunes</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Martes"> Martes</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Miércoles"> Miércoles</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Jueves"> Jueves</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Viernes"> Viernes</label>
+                <label><input type="checkbox" class="dayCheckbox" value="Sábado"> Sábado</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Horas:</label>
+            <div class="checkbox-group hours-group" id="hourOptions">
+                <!-- Horas generadas dinámicamente aquí -->
+            </div>
+        </div>
+
+        <div>
+            <label for="timeZoneSelect">Zona horaria:</label>
+            <select id="timeZoneSelect">
+                <option value="GMT-3">GMT-3 (Argentina)</option>
+                <option value="PST">PST</option>
+                <option value="CST">CST</option>
+                <option value="EST">EST</option>
+            </select>
+        </div>
+
+        <button id="submitBtn">Enviar Disponibilidad</button>
+        <button id="languageBtn">English</button>
+
+        <div id="availabilityList"></div>
+        <footer>
+            <p>Desarrollado por Edgardo Villalba</p>
+        </footer>
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
